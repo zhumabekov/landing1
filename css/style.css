@@ -3,6 +3,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 a {
@@ -72,6 +73,7 @@ header .head .nav {
       -ms-flex-align: end;
           align-items: end;
   font-size: 1em;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -84,7 +86,7 @@ header .head .nav a:after {
   content: "";
   display: block;
   width: 0%;
-  height: 2px;
+  height: 4px;
   background-color: #fc645f;
   -webkit-transition: width .3s;
   transition: width .3s;
@@ -161,6 +163,375 @@ header .body button {
 header .body button:hover {
   background-color: #fc645f;
   color: #fff;
+  -webkit-transition: all .3s ease-out 0.1s;
+  transition: all .3s ease-out 0.1s;
+}
+
+.receiveBlock {
+  padding: 20px 0;
+  width: 100%;
+}
+
+.receiveBlock .container {
+  height: 70vh;
+  width: 75%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr 3fr;
+      grid-template-rows: 2fr 3fr;
+  grid-gap: 10px;
+}
+
+.receiveBlock .container .title {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  display: block;
+  width: 55%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.receiveBlock .container .title h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #949699;
+}
+
+.receiveBlock .container .title h1 span {
+  color: #fc645f;
+}
+
+.receiveBlock .container .title h1:after {
+  content: "";
+  display: block;
+  width: 65%;
+  margin: 10px auto;
+  height: 2px;
+  background-color: #949699;
+}
+
+.receiveBlock .container .title p {
+  padding: 10px;
+  font-size: 1.3em;
+  color: #949699;
+}
+
+.receiveBlock .container .blocks {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.receiveBlock .container .blocks .block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr 1fr 1.5fr;
+      grid-template-rows: 2fr 1fr 1.5fr;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.receiveBlock .container .blocks .block .icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 4px solid #fc645f;
+  background-color: #f44444;
+}
+
+.receiveBlock .container .blocks .block .icon i {
+  color: #fff;
+  font-size: 2.5em;
+  line-height: 90px;
+}
+
+.receiveBlock .container .blocks .block .icon:hover {
+  background-color: #fff;
+  -webkit-transition: all .3s ease-out 0.1s;
+  transition: all .3s ease-out 0.1s;
+}
+
+.receiveBlock .container .blocks .block .icon:hover i {
+  color: #fc645f;
+  -webkit-transition: all .3s ease-out 0.1s;
+  transition: all .3s ease-out 0.1s;
+}
+
+.receiveBlock .container .blocks .block h3 {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  text-transform: uppercase;
+  color: #949699;
+}
+
+.receiveBlock .container .blocks .block h3:after {
+  content: "";
+  display: block;
+  width: 25%;
+  margin: 10px auto;
+  height: 2px;
+  background-color: #949699;
+}
+
+.receiveBlock .container .blocks .block p {
+  color: #949699;
+  padding: 0 10px;
+}
+
+.callUpBlock {
+  width: 100%;
+  height: 70vh;
+  background: url(../img/fon2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.callUpBlock .wrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5% 0;
+}
+
+.callUpBlock .container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 5% 0;
+  border: 8px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.callUpBlock .container h1 {
+  font-size: 4em;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.callUpBlock .container h1 span {
+  color: #fc645f;
+}
+
+.callUpBlock .container button {
+  margin-top: 2.2em;
+  font-size: 1.8em;
+  color: #fc645f;
+  text-transform: capitalize;
+  padding: .4em 1.5em;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.1);
+  border: 3px solid #fc645f;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.callUpBlock .container button:hover {
+  color: #fff;
+  background-color: #fc645f;
+  -webkit-transition: all .3s ease-out 0.1s;
+  transition: all .3s ease-out 0.1s;
+}
+
+.servicesBlock {
+  width: 100%;
+  height: 210vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3 1fr);
+}
+
+.servicesBlock .service:nth-child(odd) {
+  background: #f4f5f7;
+}
+
+.servicesBlock .container {
+  width: 75%;
+  margin: 0 auto;
+  height: 70vh;
+}
+
+.servicesBlock .service1 .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 4fr;
+      grid-template-rows: 1fr 4fr;
+  -ms-grid-columns: 1fr 1.5fr;
+      grid-template-columns: 1fr 1.5fr;
+  grid-column-gap: 10px;
+}
+
+.servicesBlock .service1 .container h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  color: #949699;
+  text-transform: uppercase;
+}
+
+.servicesBlock .service1 .container h1 span {
+  color: #fc645f;
+}
+
+.servicesBlock .service1 .container h1:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #949699;
+  margin-top: 5px;
+}
+
+.servicesBlock .service1 .container .text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.servicesBlock .service1 .container .text h2 {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  color: #848588;
+  border-left: 8px solid #fc645f;
+  padding-left: 8px;
+  line-height: 1.8em;
+}
+
+.servicesBlock .service1 .container .text p {
+  color: #aeaeaf;
+  margin: 10px 0;
+  line-height: 1.8em;
+}
+
+.servicesBlock .service1 .container .text button {
+  margin-top: 1.2em;
+  font-size: 1.4em;
+  color: #fff;
+  background: #fc645f;
+  border-radius: 5px;
+  padding: .5em 1.5em;
+  border: 2px solid #fc645f;
+}
+
+.servicesBlock .service1 .container .text button:hover {
+  color: #fc645f;
+  background: #fff;
+  -webkit-transition: all .3s ease-out 0.1s;
+  transition: all .3s ease-out 0.1s;
+}
+
+.servicesBlock .service2 .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr 1fr;
+      grid-template-columns: 1.5fr 1fr;
+  grid-column-gap: 10px;
+}
+
+.servicesBlock .service2 .container .text {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: right;
+}
+
+.servicesBlock .service2 .container .text h2 {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  color: #848588;
+  border-right: 8px solid #fc645f;
+  padding-right: 8px;
+  line-height: 1.8em;
+}
+
+.servicesBlock .service2 .container .text p {
+  color: #aeaeaf;
+  margin: 10px 0;
+  line-height: 1.8em;
+}
+
+.servicesBlock .service2 .container .text button {
+  margin-top: 1.2em;
+  font-size: 1.4em;
+  color: #fff;
+  background: #fc645f;
+  border-radius: 5px;
+  padding: .5em 1.5em;
+  border: 2px solid #fc645f;
+}
+
+.servicesBlock .service2 .container .text button:hover {
+  color: #fc645f;
+  background: #fff;
+  -webkit-transition: all .3s ease-out 0.1s;
+  transition: all .3s ease-out 0.1s;
+}
+
+.servicesBlock .service3 .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.5fr;
+      grid-template-columns: 1fr 1.5fr;
+  grid-column-gap: 10px;
+}
+
+.servicesBlock .service3 .container .text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.servicesBlock .service3 .container .text h2 {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  color: #848588;
+  border-left: 8px solid #fc645f;
+  padding-left: 8px;
+  line-height: 1.8em;
+}
+
+.servicesBlock .service3 .container .text p {
+  color: #aeaeaf;
+  margin: 10px 0;
+  line-height: 1.8em;
+}
+
+.servicesBlock .service3 .container .text button {
+  margin-top: 1.2em;
+  font-size: 1.4em;
+  color: #fff;
+  background: #fc645f;
+  border-radius: 5px;
+  padding: .5em 1.5em;
+  border: 2px solid #fc645f;
+}
+
+.servicesBlock .service3 .container .text button:hover {
+  color: #fc645f;
+  background: #fff;
   -webkit-transition: all .3s ease-out 0.1s;
   transition: all .3s ease-out 0.1s;
 }

@@ -4,6 +4,7 @@ $maincolor: #fc645f;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 a{
     text-decoration: none;
@@ -55,6 +56,7 @@ header{
             justify-content: space-between;
             align-items: end;
             font-size: 1em;
+            font-weight: bold;
             text-transform: uppercase;
             a{
                 display: inline-block;
@@ -63,7 +65,7 @@ header{
                     content: "";
                     display: block;
                     width: 0%;
-                    height: 2px;
+                    height: 4px;
                     background-color: $maincolor;
                     transition: width .3s;
                 }
@@ -128,6 +130,301 @@ header{
                 background-color: $maincolor;
                 color: #fff;
                 transition: all .3s ease-out 0.1s;
+            }
+        }
+    }
+}
+.receiveBlock{
+    padding: 20px 0;
+    width: 100%;
+    .container{
+        height: 70vh;
+        width: 75%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 2fr 3fr;
+        grid-gap: 10px;
+        .title{
+            align-self: center;
+            justify-self: center;
+            display: block;
+            width: 55%;
+            margin: 0 auto;
+            text-align: center;
+            h1{
+                font-size: 2em;
+                text-transform: uppercase;
+                color: #949699;
+                span{
+                    color: $maincolor;
+                }
+                &:after{
+                    content: "";
+                    display: block;
+                    width: 65%;
+                    margin: 10px auto;
+                    height: 2px;
+                    background-color: #949699;
+                }
+            }
+            p{
+                padding: 10px;
+                font-size: 1.3em;
+                color: #949699;
+            }
+        }
+        .blocks{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+            align-items: center;
+            text-align: center;
+            .block{
+                display: grid;
+                grid-template-rows: 2fr 1fr 1.5fr;
+                align-self: center;
+                .icon{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                    border: 4px solid $maincolor;
+                    background-color: #f44444;
+                    i{
+                        color:#fff;
+                        font-size: 2.5em;
+                        line-height: 90px;
+                    }
+                    &:hover{
+                        background-color: #fff;
+                        transition: all .3s ease-out 0.1s;
+                        i{
+                            color: $maincolor;
+                            transition: all .3s ease-out 0.1s;
+                        }
+                    }
+                }
+                h3{
+                    align-self: end;
+                    text-transform: uppercase;
+                    color: #949699;
+                    &:after{
+                        content: "";
+                        display: block;
+                        width: 25%;
+                        margin: 10px auto;
+                        height: 2px;
+                        background-color: #949699;
+                    }
+                }
+                p{
+                    color: #949699;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}
+.callUpBlock{
+    width: 100%;
+    height: 70vh;
+    background: url(../img/fon2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    .wrapper{
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: rgba($color: #000000, $alpha: .5);
+        padding: 5% 0;
+    }
+    .container{
+        width: 75%;
+        margin: 0 auto; 
+        padding: 5% 0;
+        border: 8px solid rgba($color: #fff, $alpha: .2);
+        text-align: center;
+        h1{
+            font-size: 4em;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+            span{
+                color: $maincolor;
+            }
+        }
+        button{
+            margin-top: 2.2em;
+            font-size: 1.8em;
+            color: $maincolor;
+            text-transform: capitalize;
+            padding: .4em 1.5em;
+            text-align: center;
+            background: rgba($color: #000000, $alpha: .1);
+            border: 3px solid $maincolor;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover{
+                color:#fff;
+                background-color: $maincolor;
+                transition: all .3s ease-out 0.1s;
+            }
+        }
+    }
+}
+.servicesBlock{
+    width: 100%;
+    height: 210vh;
+    display: grid;
+    grid-template-rows: repeat(3 1fr);
+    .service:nth-child(odd){
+        background:#f4f5f7;
+    }
+    .container{
+        width: 75%;
+        margin: 0 auto;
+        height: 70vh;
+    }
+    .service1{
+        .container{
+            display: grid;
+            grid-template-rows: 1fr 4fr;
+            grid-template-columns: 1fr 1.5fr;
+            grid-column-gap: 10px;
+            h1{
+                align-self: center;
+                justify-self: center;
+                grid-column: 1/3;
+                color: #949699;
+                text-transform: uppercase;
+                span{
+                    color: $maincolor;
+                }
+                &:after{
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 2px;
+                    background: #949699;
+                    margin-top: 5px;
+                }
+            }
+            .text{
+                align-self: center;
+                h2{
+                    font-size: 1.8em;
+                    text-transform: uppercase;
+                    color: #848588;
+                    border-left: 8px solid $maincolor;
+                    padding-left: 8px;
+                    line-height: 1.8em;
+                }
+                p{
+                    color: #aeaeaf;
+                    margin: 10px 0;
+                    line-height: 1.8em;
+                }
+                button{
+                    margin-top: 1.2em;
+                    font-size: 1.4em;
+                    color: #fff;
+                    background: $maincolor;
+                    border-radius: 5px;
+                    padding: .5em 1.5em;
+                    border: 2px solid $maincolor;
+                    &:hover{
+                        color:  $maincolor;
+                        background: #fff;
+                        transition: all .3s ease-out 0.1s;
+                    }
+                }
+            }
+            .img{
+            
+            }
+        }
+    }
+    .service2{
+        .container{
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            grid-column-gap: 10px;
+            .text{
+                order: 2;
+                align-self: center;
+                text-align: right;
+                h2{
+                    font-size: 1.8em;
+                    text-transform: uppercase;
+                    color: #848588;
+                    border-right: 8px solid $maincolor;
+                    padding-right: 8px;
+                    line-height: 1.8em;
+                }
+                p{
+                    color: #aeaeaf;
+                    margin: 10px 0;
+                    line-height: 1.8em;
+                }
+                button{
+                    margin-top: 1.2em;
+                    font-size: 1.4em;
+                    color: #fff;
+                    background: $maincolor;
+                    border-radius: 5px;
+                    padding: .5em 1.5em;
+                    border: 2px solid $maincolor;
+                    &:hover{
+                        color:  $maincolor;
+                        background: #fff;
+                        transition: all .3s ease-out 0.1s;
+                    }
+                }
+            }
+            .img{
+            
+            }
+        }
+    }
+    .service3{
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            grid-column-gap: 10px;
+            .text{
+                align-self: center;
+                h2{
+                    font-size: 1.8em;
+                    text-transform: uppercase;
+                    color: #848588;
+                    border-left: 8px solid $maincolor;
+                    padding-left: 8px;
+                    line-height: 1.8em;
+                }
+                p{
+                    color: #aeaeaf;
+                    margin: 10px 0;
+                    line-height: 1.8em;
+                }
+                button{
+                    margin-top: 1.2em;
+                    font-size: 1.4em;
+                    color: #fff;
+                    background: $maincolor;
+                    border-radius: 5px;
+                    padding: .5em 1.5em;
+                    border: 2px solid $maincolor;
+                    &:hover{
+                        color:  $maincolor;
+                        background: #fff;
+                        transition: all .3s ease-out 0.1s;
+                    }
+                }
+            }
+            .img{
+            
             }
         }
     }
