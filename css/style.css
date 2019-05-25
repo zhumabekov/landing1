@@ -293,6 +293,7 @@ header .body button:hover {
 .callUpBlock {
   width: 100%;
   height: 70vh;
+  min-height: 430px;
   background: url(../img/fon2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -577,12 +578,12 @@ header .body button:hover {
 .portfolio .container {
   width: 75%;
   margin: 0 auto;
-  height: 80vh;
+  height: 85vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr .8fr 6fr 1fr;
       grid-template-rows: 1fr .8fr 6fr 1fr;
-  grid-gap: 10px;
+  grid-row-gap: 20px;
 }
 
 .portfolio .container h1 {
@@ -655,32 +656,97 @@ header .body button:hover {
   grid-column: 3/5;
 }
 
+.portfolio .container .works .box {
+  position: relative;
+}
+
+.portfolio .container .works .box div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-color: rgba(252, 100, 95, 0.7);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  font-weight: bold;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1.5fr;
+      grid-template-rows: 1fr 1.5fr;
+}
+
+.portfolio .container .works .box div span {
+  font-size: 1.5em;
+  padding: 5px;
+}
+
+.portfolio .container .works .box div i {
+  font-size: 2.5em;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.portfolio .container .works .box:hover div {
+  opacity: 1;
+}
+
 .portfolio .container .works .box1 {
-  background-image: url(../img/img1);
+  background-image: url(../img/img1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
 
 .portfolio .container .works .box2 {
-  background-image: url(../img/img2);
+  background-image: url(../img/img2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
 
 .portfolio .container .works .box3 {
-  background-image: url(../img/img3);
+  background-image: url(../img/img3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
 
 .portfolio .container .works .box4 {
-  background-image: url(../img/img4);
+  background-image: url(../img/img4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
 
 .portfolio .container .works .box5 {
-  background-image: url(../img/img5);
+  background-image: url(../img/img5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
 
 .portfolio .container .works .box6 {
-  background-image: url(../img/img6);
+  background-image: url(../img/img6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
 
 .portfolio .container .works .box7 {
-  background-image: url(../img/img7);
+  background-image: url(../img/img7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
 
 .portfolio .container button {
@@ -702,5 +768,306 @@ header .body button:hover {
   background: #fff;
   -webkit-transition: all .3s ease-out 0.1s;
   transition: all .3s ease-out 0.1s;
+}
+
+.team {
+  width: 100%;
+  background: #f4f5f7;
+}
+
+.team .container {
+  width: 75%;
+  margin: 0 auto;
+  height: 70vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: .8fr 3fr;
+      grid-template-rows: .8fr 3fr;
+}
+
+.team .container h2 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  color: #848588;
+  text-transform: uppercase;
+}
+
+.team .container h2 span {
+  color: #fc645f;
+}
+
+.team .container h2::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #848588;
+  display: block;
+  margin-top: 3px;
+}
+
+.team .container .content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.team .container .content .person {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 4fr 1fr 1fr 1fr;
+      grid-template-rows: 4fr 1fr 1fr 1fr;
+  grid-row-gap: 10px;
+}
+
+.team .container .content .person .avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: url(../img/ava1.jpg);
+  background-size: contain;
+}
+
+.team .container .content .person .name {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  color: #646464;
+  font-weight: bold;
+}
+
+.team .container .content .person .name span {
+  color: #fc645f;
+}
+
+.team .container .content .person .proffesion {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  color: #949699;
+}
+
+.team .container .content .person .sn {
+  font-size: 1.5em;
+  color: #646464;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.team .container .content .person .sn span {
+  font-size: 1.2em;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.team .container .content .person .sn .twitter:hover {
+  color: #5ab2e6;
+}
+
+.team .container .content .person .sn .fb:hover {
+  color: #463ae9;
+}
+
+.team .container .content .person .sn .in:hover {
+  color: #3983ad;
+}
+
+.clients {
+  width: 100%;
+}
+
+.clients .container {
+  width: 75%;
+  height: 70vh;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3] 0.5fr;
+      grid-template-rows: repeat(3, 1fr) 0.5fr;
+}
+
+.clients .container .decor {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  background-color: #fc645f;
+  color: #fff;
+  text-align: center;
+  font-size: 1.8em;
+  line-height: 70px;
+}
+
+.clients .container .client {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.clients .container .client .comment {
+  color: #949699;
+  font-size: .9em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.clients .container .client .avatar {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: center;
+}
+
+.clients .container .client .profession {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.clients .container .client .profession .name {
+  color: #646464;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.clients .container .client .profession .name span {
+  color: #fc645f;
+}
+
+.clients .container .client .profession p {
+  margin-top: 10px;
+  color: #848588;
+}
+
+.clients .container .buttons {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.clients .container .buttons div {
+  display: inline-block;
+  margin: 0 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #fc645f;
+  text-align: center;
+  line-height: 28px;
+  color: #fc645f;
+  font-size: 1.3em;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.clients .container .buttons div:hover {
+  background-color: #fc645f;
+  color: #fff;
+}
+
+.location {
+  width: 100%;
+  height: 43vh;
+  position: relative;
+}
+
+.location .contacts {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #fc645f;
+  border: 10px solid #f79895;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  padding-top: 30px;
+  left: calc(50% - 75px);
+  top: -25%;
+  z-index: 99999;
+}
+
+.location .contacts h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.location .contacts p {
+  font-size: .8em;
+  margin-top: 5px;
+}
+
+.location .maps {
+  overflow: hidden;
+}
+
+footer {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../img/fon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+footer::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+footer .logo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.4em;
+  position: absolute;
+  z-index: 99999;
+  cursor: pointer;
+  top: 43%;
+  left: 46%;
+}
+
+footer .logo span {
+  color: #fff;
+  border: 1px solid #fc645f;
+  padding: 10px 12px;
+  background-color: #fc645f;
 }
 /*# sourceMappingURL=style.css.map */
